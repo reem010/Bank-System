@@ -1,0 +1,12 @@
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.csproj.AssemblyReference.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.csproj.SuggestedBindingRedirects.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.csproj.GenerateResource.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.csproj.CoreCompileInputs.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources

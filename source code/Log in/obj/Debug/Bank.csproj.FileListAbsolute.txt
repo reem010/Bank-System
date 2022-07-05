@@ -1,0 +1,181 @@
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\y5562\Desktop\Ass\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\y5562\Desktop\Ass\Log in\Log in\obj\Debug\Log_in.signup.resources
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\EntityFramework.dll
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\EntityFramework.xml
+C:\Users\MBR\Downloads\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.Form1.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log_in.signup.resources
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\MBR\Downloads\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\EntityFramework.dll
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\EntityFramework.xml
+C:\Users\y5562\Desktop\C#\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.Form1.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.HOMEPAGE.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.addBranch.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.showloan.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.showCustomer.resources
+C:\Users\y5562\Desktop\C#\Log in\Log in\obj\Debug\Log_in.updateCustomer.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\EntityFramework.dll
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\EntityFramework.xml
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.addBranch.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form1.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.HOMEPAGE.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.showCustomer.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.showloan.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.showloanemployeecustomer.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form2.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form3.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form4.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form5.resources
+C:\Users\MBR\Downloads\C# Code\Log in\Log in\obj\Debug\Log_in.Form6.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\EntityFramework.dll
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\EntityFramework.xml
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.addBranch.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form1.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form2.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form3.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form4.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form5.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Form6.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.HOMEPAGE.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.showCustomer.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.showloanemployeecustomer.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log_in.showloan.resources
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\MBR\Desktop\20200076_Bank\Log in\Log in\obj\Debug\Log in.pdb
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\Log in.exe.config
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\Log in.exe
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\Log in.pdb
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\EntityFramework.dll
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\EntityFramework.xml
+C:\Users\alawa\Downloads\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.addBranch.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form1.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form2.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form3.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form4.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form5.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Form6.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.login.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.HOMEPAGE.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.showCustomer.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.showloanemployeecustomer.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log_in.showloan.resources
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log in.exe
+C:\Users\alawa\Downloads\Log in\Log in\obj\Debug\Log in.pdb
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\Log in.exe.config
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\Log in.exe
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\Log in.pdb
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\EntityFramework.dll
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\EntityFramework.SqlServer.dll
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\EntityFramework.xml
+J:\Data base\20200076_Bank\Log in\Log in\Log in\bin\Debug\EntityFramework.SqlServer.xml
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Bank.csproj.AssemblyReference.cache
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.addBranch.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.customer_signUp.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.employee_signUp.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form1.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form2.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form3.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form4.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form5.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Form6.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.login.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.Properties.Resources.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.selectTypeToSignUp.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.HOMEPAGE.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.showCustomer.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.showloanemployeecustomer.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log_in.showloan.resources
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Bank.csproj.GenerateResource.cache
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Bank.csproj.CopyComplete
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log in.exe
+J:\Data base\20200076_Bank\Log in\Log in\Log in\obj\Debug\Log in.pdb

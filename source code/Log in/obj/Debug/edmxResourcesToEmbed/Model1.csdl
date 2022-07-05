@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BankModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACCOUNT">
+    <Key>
+      <PropertyRef Name="ACCOUNTNUMBER" />
+    </Key>
+    <Property Name="ACCOUNTNUMBER" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BRANCH_ID" Type="Int64" Nullable="false" />
+    <Property Name="SSN" Type="Int64" Nullable="false" />
+    <Property Name="BALANCE" Type="Boolean" Nullable="false" />
+    <Property Name="ACCOUNTTYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CUSTOMER" Relationship="Self.FK_ACCOUNT_HOLDBY_CUSTOMER" FromRole="ACCOUNT" ToRole="CUSTOMER" />
+    <NavigationProperty Name="BRANCH" Relationship="Self.FK_ACCOUNT_MAINTAIN_BRANCH" FromRole="ACCOUNT" ToRole="BRANCH" />
+  </EntityType>
+  <EntityType Name="ADMIN">
+    <Key>
+      <PropertyRef Name="USERNAMEADMIN" />
+    </Key>
+    <Property Name="USERNAMEADMIN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD_ADMIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BANKs" Relationship="Self.FK_BANK_ADD_BANK_ADMIN" FromRole="ADMIN" ToRole="BANK" />
+    <NavigationProperty Name="BRANCHes" Relationship="Self.FK_BRANCH_ADD_BRANC_ADMIN" FromRole="ADMIN" ToRole="BRANCH" />
+  </EntityType>
+  <EntityType Name="BANK">
+    <Key>
+      <PropertyRef Name="CODE" />
+    </Key>
+    <Property Name="CODE" Type="Int64" Nullable="false" />
+    <Property Name="USERNAMEADMIN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAMEBANK" Type="String" MaxLength="300" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="STREETBANK" Type="String" MaxLength="300" FixedLength="true" Unicode="false" />
+    <Property Name="CITYBANK" Type="String" MaxLength="300" FixedLength="true" Unicode="false" />
+    <Property Name="COUNTRYBANK" Type="String" MaxLength="300" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="ADMIN" Relationship="Self.FK_BANK_ADD_BANK_ADMIN" FromRole="BANK" ToRole="ADMIN" />
+    <NavigationProperty Name="BRANCHes" Relationship="Self.FK_BRANCH_HAS_A_BANK" FromRole="BANK" ToRole="BRANCH" />
+  </EntityType>
+  <EntityType Name="BRANCH">
+    <Key>
+      <PropertyRef Name="BRANCH_ID" />
+    </Key>
+    <Property Name="BRANCH_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CODE" Type="Int64" Nullable="false" />
+    <Property Name="USERNAMEADMIN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME_BRANCH" Type="String" MaxLength="200" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="STREET_BRANCH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="CITY_BRANCH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COUNTRY_BRANCH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="ACCOUNTs" Relationship="Self.FK_ACCOUNT_MAINTAIN_BRANCH" FromRole="BRANCH" ToRole="ACCOUNT" />
+    <NavigationProperty Name="ADMIN" Relationship="Self.FK_BRANCH_ADD_BRANC_ADMIN" FromRole="BRANCH" ToRole="ADMIN" />
+    <NavigationProperty Name="BANK" Relationship="Self.FK_BRANCH_HAS_A_BANK" FromRole="BRANCH" ToRole="BANK" />
+    <NavigationProperty Name="EMPLOYEEs" Relationship="Self.FK_EMPLOYEE_WORK_FOR_BRANCH" FromRole="BRANCH" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="LOANs" Relationship="Self.FK_LOAN_OFFER_BRANCH" FromRole="BRANCH" ToRole="LOAN" />
+  </EntityType>
+  <EntityType Name="CUSTOMER">
+    <Key>
+      <PropertyRef Name="SSN" />
+    </Key>
+    <Property Name="FNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MIDDLENAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SSN" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CITY_CUSTOMER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="STREET_CUSTOMER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USERNAME_ADMIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD_ADMIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ACCOUNTs" Relationship="Self.FK_ACCOUNT_HOLDBY_CUSTOMER" FromRole="CUSTOMER" ToRole="ACCOUNT" />
+    <NavigationProperty Name="CUTOMER_PHONE" Relationship="Self.FK_CUTOMER__HASA_CUSTOMER" FromRole="CUSTOMER" ToRole="CUTOMER_PHONE" />
+    <NavigationProperty Name="LOANs" Relationship="Self.AVAILEDBY" FromRole="CUSTOMER" ToRole="LOAN" />
+  </EntityType>
+  <EntityType Name="CUTOMER_PHONE">
+    <Key>
+      <PropertyRef Name="PHONE" />
+      <PropertyRef Name="SSN_CUSTOMER" />
+    </Key>
+    <Property Name="PHONE" Type="Int64" Nullable="false" />
+    <Property Name="SSN_CUSTOMER" Type="Int64" Nullable="false" />
+    <Property Name="SSN" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="CUSTOMER" Relationship="Self.FK_CUTOMER__HASA_CUSTOMER" FromRole="CUTOMER_PHONE" ToRole="CUSTOMER" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPLOYEE_ID" />
+    </Key>
+    <Property Name="EMPLOYEE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BRANCH_ID" Type="Int64" />
+    <Property Name="STREET_EMPLOYEE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CITY_EMPLOYEE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COUNTRY_EMPLOYEE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FNAME_EMPLOYEE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LNAME_EMPLOYEE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USERNAME_ADMIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD_ADMIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BRANCH" Relationship="Self.FK_EMPLOYEE_WORK_FOR_BRANCH" FromRole="EMPLOYEE" ToRole="BRANCH" />
+    <NavigationProperty Name="EMPLOYEE_PHONE" Relationship="Self.FK_EMPLOYEE_OWN_EMPLOYEE" FromRole="EMPLOYEE" ToRole="EMPLOYEE_PHONE" />
+    <NavigationProperty Name="LOANs" Relationship="Self.ADD_LOAN" FromRole="EMPLOYEE" ToRole="LOAN" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE_PHONE">
+    <Key>
+      <PropertyRef Name="PHONE_EMPLOYEE" />
+      <PropertyRef Name="EMPLOYEEID" />
+    </Key>
+    <Property Name="PHONE_EMPLOYEE" Type="Int64" Nullable="false" />
+    <Property Name="EMPLOYEEID" Type="Int64" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="EMPLOYEE" Relationship="Self.FK_EMPLOYEE_OWN_EMPLOYEE" FromRole="EMPLOYEE_PHONE" ToRole="EMPLOYEE" />
+  </EntityType>
+  <EntityType Name="LOAN">
+    <Key>
+      <PropertyRef Name="LOANNUMBER" />
+      <PropertyRef Name="LOANTYPE" />
+    </Key>
+    <Property Name="LOANNUMBER" Type="Int64" Nullable="false" />
+    <Property Name="LOANAMOUNT" Type="Int64" />
+    <Property Name="LOANTYPE" Type="String" MaxLength="200" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BRANCH_ID" Type="Int64" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BRANCH" Relationship="Self.FK_LOAN_OFFER_BRANCH" FromRole="LOAN" ToRole="BRANCH" />
+    <NavigationProperty Name="EMPLOYEEs" Relationship="Self.ADD_LOAN" FromRole="LOAN" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="CUSTOMERs" Relationship="Self.AVAILEDBY" FromRole="LOAN" ToRole="CUSTOMER" />
+  </EntityType>
+  <Association Name="FK_ACCOUNT_HOLDBY_CUSTOMER">
+    <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+    <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUSTOMER">
+        <PropertyRef Name="SSN" />
+      </Principal>
+      <Dependent Role="ACCOUNT">
+        <PropertyRef Name="SSN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ACCOUNT_MAINTAIN_BRANCH">
+    <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="1" />
+    <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRANCH">
+        <PropertyRef Name="BRANCH_ID" />
+      </Principal>
+      <Dependent Role="ACCOUNT">
+        <PropertyRef Name="BRANCH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BANK_ADD_BANK_ADMIN">
+    <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+    <End Role="BANK" Type="Self.BANK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMIN">
+        <PropertyRef Name="USERNAMEADMIN" />
+      </Principal>
+      <Dependent Role="BANK">
+        <PropertyRef Name="USERNAMEADMIN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BRANCH_ADD_BRANC_ADMIN">
+    <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+    <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMIN">
+        <PropertyRef Name="USERNAMEADMIN" />
+      </Principal>
+      <Dependent Role="BRANCH">
+        <PropertyRef Name="USERNAMEADMIN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BRANCH_HAS_A_BANK">
+    <End Role="BANK" Type="Self.BANK" Multiplicity="1" />
+    <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BANK">
+        <PropertyRef Name="CODE" />
+      </Principal>
+      <Dependent Role="BRANCH">
+        <PropertyRef Name="CODE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLOYEE_WORK_FOR_BRANCH">
+    <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRANCH">
+        <PropertyRef Name="BRANCH_ID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="BRANCH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LOAN_OFFER_BRANCH">
+    <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="1" />
+    <End Role="LOAN" Type="Self.LOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRANCH">
+        <PropertyRef Name="BRANCH_ID" />
+      </Principal>
+      <Dependent Role="LOAN">
+        <PropertyRef Name="BRANCH_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUTOMER__HASA_CUSTOMER">
+    <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+    <End Role="CUTOMER_PHONE" Type="Self.CUTOMER_PHONE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUSTOMER">
+        <PropertyRef Name="SSN" />
+      </Principal>
+      <Dependent Role="CUTOMER_PHONE">
+        <PropertyRef Name="SSN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLOYEE_OWN_EMPLOYEE">
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="1" />
+    <End Role="EMPLOYEE_PHONE" Type="Self.EMPLOYEE_PHONE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLOYEE">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE_PHONE">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ADD_LOAN">
+    <End Role="LOAN" Type="Self.LOAN" Multiplicity="*" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+  </Association>
+  <Association Name="AVAILEDBY">
+    <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="*" />
+    <End Role="LOAN" Type="Self.LOAN" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="BankEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACCOUNTs" EntityType="Self.ACCOUNT" />
+    <EntitySet Name="ADMINs" EntityType="Self.ADMIN" />
+    <EntitySet Name="BANKs" EntityType="Self.BANK" />
+    <EntitySet Name="BRANCHes" EntityType="Self.BRANCH" />
+    <EntitySet Name="CUSTOMERs" EntityType="Self.CUSTOMER" />
+    <EntitySet Name="CUTOMER_PHONE" EntityType="Self.CUTOMER_PHONE" />
+    <EntitySet Name="EMPLOYEEs" EntityType="Self.EMPLOYEE" />
+    <EntitySet Name="EMPLOYEE_PHONE" EntityType="Self.EMPLOYEE_PHONE" />
+    <EntitySet Name="LOANs" EntityType="Self.LOAN" />
+    <AssociationSet Name="FK_ACCOUNT_HOLDBY_CUSTOMER" Association="Self.FK_ACCOUNT_HOLDBY_CUSTOMER">
+      <End Role="CUSTOMER" EntitySet="CUSTOMERs" />
+      <End Role="ACCOUNT" EntitySet="ACCOUNTs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ACCOUNT_MAINTAIN_BRANCH" Association="Self.FK_ACCOUNT_MAINTAIN_BRANCH">
+      <End Role="BRANCH" EntitySet="BRANCHes" />
+      <End Role="ACCOUNT" EntitySet="ACCOUNTs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BANK_ADD_BANK_ADMIN" Association="Self.FK_BANK_ADD_BANK_ADMIN">
+      <End Role="ADMIN" EntitySet="ADMINs" />
+      <End Role="BANK" EntitySet="BANKs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BRANCH_ADD_BRANC_ADMIN" Association="Self.FK_BRANCH_ADD_BRANC_ADMIN">
+      <End Role="ADMIN" EntitySet="ADMINs" />
+      <End Role="BRANCH" EntitySet="BRANCHes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BRANCH_HAS_A_BANK" Association="Self.FK_BRANCH_HAS_A_BANK">
+      <End Role="BANK" EntitySet="BANKs" />
+      <End Role="BRANCH" EntitySet="BRANCHes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLOYEE_WORK_FOR_BRANCH" Association="Self.FK_EMPLOYEE_WORK_FOR_BRANCH">
+      <End Role="BRANCH" EntitySet="BRANCHes" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LOAN_OFFER_BRANCH" Association="Self.FK_LOAN_OFFER_BRANCH">
+      <End Role="BRANCH" EntitySet="BRANCHes" />
+      <End Role="LOAN" EntitySet="LOANs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUTOMER__HASA_CUSTOMER" Association="Self.FK_CUTOMER__HASA_CUSTOMER">
+      <End Role="CUSTOMER" EntitySet="CUSTOMERs" />
+      <End Role="CUTOMER_PHONE" EntitySet="CUTOMER_PHONE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLOYEE_OWN_EMPLOYEE" Association="Self.FK_EMPLOYEE_OWN_EMPLOYEE">
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+      <End Role="EMPLOYEE_PHONE" EntitySet="EMPLOYEE_PHONE" />
+    </AssociationSet>
+    <AssociationSet Name="ADD_LOAN" Association="Self.ADD_LOAN">
+      <End Role="LOAN" EntitySet="LOANs" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="AVAILEDBY" Association="Self.AVAILEDBY">
+      <End Role="CUSTOMER" EntitySet="CUSTOMERs" />
+      <End Role="LOAN" EntitySet="LOANs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64ca28c3fa8a4086b10642ded69a4aa3" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="BankModel.ACCOUNT" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.ADMIN" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.BANK" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.BRANCH" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.CUSTOMER" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.CUTOMER_PHONE" Width="1.5" PointX="7.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.EMPLOYEE" Width="1.5" PointX="10.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.EMPLOYEE_PHONE" Width="1.5" PointX="12.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.LOAN" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="BankModel.FK_ACCOUNT_HOLDBY_CUSTOMER" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_ACCOUNT_MAINTAIN_BRANCH" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_BANK_ADD_BANK_ADMIN" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_BRANCH_ADD_BRANC_ADMIN" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_BRANCH_HAS_A_BANK" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_EMPLOYEE_WORK_FOR_BRANCH" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_LOAN_OFFER_BRANCH" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_CUTOMER__HASA_CUSTOMER" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.FK_EMPLOYEE_OWN_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.ADD_LOAN" ManuallyRouted="false" />
+        <AssociationConnector Association="BankModel.AVAILEDBY" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

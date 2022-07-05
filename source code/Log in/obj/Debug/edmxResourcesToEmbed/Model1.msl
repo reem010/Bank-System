@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BankModelStoreContainer" CdmEntityContainer="BankEntities">
+    <EntitySetMapping Name="ACCOUNTs">
+      <EntityTypeMapping TypeName="BankModel.ACCOUNT">
+        <MappingFragment StoreEntitySet="ACCOUNT">
+          <ScalarProperty Name="ACCOUNTNUMBER" ColumnName="ACCOUNTNUMBER" />
+          <ScalarProperty Name="BRANCH_ID" ColumnName="BRANCH_ID" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="ACCOUNTTYPE" ColumnName="ACCOUNTTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ADMINs">
+      <EntityTypeMapping TypeName="BankModel.ADMIN">
+        <MappingFragment StoreEntitySet="ADMIN">
+          <ScalarProperty Name="USERNAMEADMIN" ColumnName="USERNAMEADMIN" />
+          <ScalarProperty Name="PASSWORD_ADMIN" ColumnName="PASSWORD_ADMIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANKs">
+      <EntityTypeMapping TypeName="BankModel.BANK">
+        <MappingFragment StoreEntitySet="BANK">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="USERNAMEADMIN" ColumnName="USERNAMEADMIN" />
+          <ScalarProperty Name="NAMEBANK" ColumnName="NAMEBANK" />
+          <ScalarProperty Name="STREETBANK" ColumnName="STREETBANK" />
+          <ScalarProperty Name="CITYBANK" ColumnName="CITYBANK" />
+          <ScalarProperty Name="COUNTRYBANK" ColumnName="COUNTRYBANK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRANCHes">
+      <EntityTypeMapping TypeName="BankModel.BRANCH">
+        <MappingFragment StoreEntitySet="BRANCH">
+          <ScalarProperty Name="BRANCH_ID" ColumnName="BRANCH_ID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="USERNAMEADMIN" ColumnName="USERNAMEADMIN" />
+          <ScalarProperty Name="NAME_BRANCH" ColumnName="NAME_BRANCH" />
+          <ScalarProperty Name="STREET_BRANCH" ColumnName="STREET_BRANCH" />
+          <ScalarProperty Name="CITY_BRANCH" ColumnName="CITY_BRANCH" />
+          <ScalarProperty Name="COUNTRY_BRANCH" ColumnName="COUNTRY_BRANCH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CUSTOMERs">
+      <EntityTypeMapping TypeName="BankModel.CUSTOMER">
+        <MappingFragment StoreEntitySet="CUSTOMER">
+          <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+          <ScalarProperty Name="MIDDLENAME" ColumnName="MIDDLENAME" />
+          <ScalarProperty Name="LNAME" ColumnName="LNAME" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="CITY_CUSTOMER" ColumnName="CITY_CUSTOMER" />
+          <ScalarProperty Name="STREET_CUSTOMER" ColumnName="STREET_CUSTOMER" />
+          <ScalarProperty Name="USERNAME_ADMIN" ColumnName="USERNAME_ADMIN" />
+          <ScalarProperty Name="PASSWORD_ADMIN" ColumnName="PASSWORD_ADMIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CUTOMER_PHONE">
+      <EntityTypeMapping TypeName="BankModel.CUTOMER_PHONE">
+        <MappingFragment StoreEntitySet="CUTOMER_PHONE">
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="SSN_CUSTOMER" ColumnName="SSN_CUSTOMER" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYEEs">
+      <EntityTypeMapping TypeName="BankModel.EMPLOYEE">
+        <MappingFragment StoreEntitySet="EMPLOYEE">
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+          <ScalarProperty Name="BRANCH_ID" ColumnName="BRANCH_ID" />
+          <ScalarProperty Name="STREET_EMPLOYEE" ColumnName="STREET_EMPLOYEE" />
+          <ScalarProperty Name="CITY_EMPLOYEE" ColumnName="CITY_EMPLOYEE" />
+          <ScalarProperty Name="COUNTRY_EMPLOYEE" ColumnName="COUNTRY_EMPLOYEE" />
+          <ScalarProperty Name="FNAME_EMPLOYEE" ColumnName="FNAME_EMPLOYEE" />
+          <ScalarProperty Name="LNAME_EMPLOYEE" ColumnName="LNAME_EMPLOYEE" />
+          <ScalarProperty Name="USERNAME_ADMIN" ColumnName="USERNAME_ADMIN" />
+          <ScalarProperty Name="PASSWORD_ADMIN" ColumnName="PASSWORD_ADMIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYEE_PHONE">
+      <EntityTypeMapping TypeName="BankModel.EMPLOYEE_PHONE">
+        <MappingFragment StoreEntitySet="EMPLOYEE_PHONE">
+          <ScalarProperty Name="PHONE_EMPLOYEE" ColumnName="PHONE_EMPLOYEE" />
+          <ScalarProperty Name="EMPLOYEEID" ColumnName="EMPLOYEEID" />
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOANs">
+      <EntityTypeMapping TypeName="BankModel.LOAN">
+        <MappingFragment StoreEntitySet="LOAN">
+          <ScalarProperty Name="LOANNUMBER" ColumnName="LOANNUMBER" />
+          <ScalarProperty Name="LOANAMOUNT" ColumnName="LOANAMOUNT" />
+          <ScalarProperty Name="LOANTYPE" ColumnName="LOANTYPE" />
+          <ScalarProperty Name="BRANCH_ID" ColumnName="BRANCH_ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ADD_LOAN" TypeName="BankModel.ADD_LOAN" StoreEntitySet="ADD_LOAN">
+      <EndProperty Name="LOAN">
+        <ScalarProperty Name="LOANNUMBER" ColumnName="LOANNUMBER" />
+        <ScalarProperty Name="LOANTYPE" ColumnName="LOANTYPE" />
+      </EndProperty>
+      <EndProperty Name="EMPLOYEE">
+        <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="AVAILEDBY" TypeName="BankModel.AVAILEDBY" StoreEntitySet="AVAILEDBY">
+      <EndProperty Name="CUSTOMER">
+        <ScalarProperty Name="SSN" ColumnName="SSN" />
+      </EndProperty>
+      <EndProperty Name="LOAN">
+        <ScalarProperty Name="LOANNUMBER" ColumnName="LOANNUMBER" />
+        <ScalarProperty Name="LOANTYPE" ColumnName="LOANTYPE" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
